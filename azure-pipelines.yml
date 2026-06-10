@@ -76,5 +76,6 @@ stages:
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
-                $(containerRegistry)/$(imageRepository):$(tag)
+                # $(containerRegistry)/$(imageRepository):$(tag)
+                acseshop.azurecr.io/productservice:$(tag)
 
