@@ -14,8 +14,9 @@ spec:
       nodeSelector:
         kubernetes.io/os: linux
       containers:
-        - image: [replace with your ACR name].azurecr.io/productservice:latest
+        - image: acseshop.azurecr.io/productservice:v1
           name: productservice
+          imagePullPolicy: Always
           resources:
             requests:
               cpu: 100m
